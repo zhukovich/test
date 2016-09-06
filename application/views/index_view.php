@@ -1,6 +1,6 @@
 <h2>Home page</h2>
 <? if ($app->views->user) { ?>
-	<h3>Files:</h3><br>
+	<h3>Main files:</h3><br>
 	<form name="upload" action="/" method="post" enctype="multipart/form-data">
 		Upload new file:<br>
 		<input type="file" name="file">
@@ -13,7 +13,7 @@
 			<td>Url<td>
 			<td>Uploaded by<td>
 		</tr>
-		<? foreach ($all_files as $f) { ?>
+		<? foreach ($files as $f) { ?>
 			<tr>
 				<td><?=$f->id;?><td>
 				<td><?=$f->name;?><td>
