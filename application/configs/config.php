@@ -1,0 +1,6 @@
+db_server = 'localhost'
+db_user = 'root'
+db_password = 'root'
+db_name = 'test'
+template_dir = 'views'
+upload_dir = 'uploads'

@@ -1,0 +1,6 @@
+RewriteEngine on
+php_flag display_errors On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^action/(.*)$ index.php?action=$1 [L,QSA]
+RewriteRule ^logout	index.php?action=login&logout=true  [L,QSA]

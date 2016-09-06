@@ -1,0 +1,8 @@
+input.notValid {
+    border: 1px solid red;
+    background: #f9cdcd;
+}
+input.Valid {
+    border: 1px solid green;
+    background: #dfefe4;
+}
